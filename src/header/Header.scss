@@ -3,18 +3,6 @@
   height: 70px;
   display: flex;
   justify-content: space-between;
-  .header-icon {
-    display: block;
-    width: 25px;
-    height: 25px;
-    border: 0.5px solid snow;
-    background-color: lightgrey;
-    border-radius: 50%;
-    padding: 5px;
-    &:hover {
-      background-color: white;
-    }
-  }
   .header-navigation {
     display: flex;
     justify-content: space-between;
@@ -38,6 +26,19 @@
     align-items: center;
     width: 400px;
     padding-right: 30px;
+    &-icon {
+      display: block;
+      width: 25px;
+      height: 25px;
+      border: 0.5px solid snow;
+      background-color: lightgrey;
+      border-radius: 50%;
+      color: #161b20;
+      padding: 5px;
+      &:hover {
+        background-color: white;
+      }
+    }
   }
 }
 
