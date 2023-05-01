@@ -1,5 +1,7 @@
+@import "../scss/variables";
+
 .header {
-  background-color: #161b20;
+  background-color: $dark60;
   height: 70px;
   display: flex;
   justify-content: space-between;
@@ -27,17 +29,7 @@
     width: 400px;
     padding-right: 30px;
     &-icon {
-      display: block;
-      width: 25px;
-      height: 25px;
-      border: 0.5px solid snow;
-      background-color: lightgrey;
-      border-radius: 50%;
-      color: #161b20;
-      padding: 5px;
-      &:hover {
-        background-color: white;
-      }
+      @include icon;
     }
   }
 }

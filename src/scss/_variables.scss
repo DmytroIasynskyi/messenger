@@ -1,0 +1,21 @@
+$dark30: #191c21;
+$dark60: #161b20;
+$dark90: #111518;
+
+$text-color: #d8d8d9;
+
+@mixin icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: 0.5px solid snow;
+  background-color: lightgrey;
+  border-radius: 50%;
+  color: $dark90;
+  padding: 1px;
+  &:hover {
+    background-color: white;
+  }
+}
