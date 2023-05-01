@@ -1,0 +1,37 @@
+@import "../scss/variables";
+
+.header {
+  background-color: $dark60;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  .header-navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    padding-left: 30px;
+    a {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+    }
+    a:hover {
+      color: lightgray;
+      border-bottom: 3px solid lightgreen;
+      padding-top: 3px;
+    }
+  }
+  .header-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    padding-right: 30px;
+    &-icon {
+      @include icon;
+    }
+  }
+}
+
+
