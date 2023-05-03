@@ -5,17 +5,19 @@ import QuestionMarkIcon from '@mui/icons-material/QuestionMark';
 import LanguageIcon from '@mui/icons-material/Language';
 import PersonIcon from '@mui/icons-material/Person';
 import React from "react";
+import {Link} from "react-router-dom";
+
 export default function Header() {
 
     return(
         <div className={"header"}>
             <nav className={"header-navigation"}>
-                <a href="#">All Projects</a>
-                <a href="#">My Projects</a>
-                <a href="#">Teams</a>
-                <a href="#">Messages</a>
-                <a href="#">Statistics</a>
-                <a href="#">Search</a>
+                <Link to="/all-projects">All Projects</Link>
+                <Link to="/my-projects">My Projects</Link>
+                <Link to="/teams">Teams</Link>
+                <Link to="/messages">Messages</Link>
+                <Link to="/statistics">Statistics</Link>
+                <Link to="/search">Search</Link>
             </nav>
             <ul className={"header-social"}>
                 <li><a href="#"><StarIcon className={"header-social-icon"} /></a></li>
