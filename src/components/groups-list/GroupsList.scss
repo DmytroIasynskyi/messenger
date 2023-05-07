@@ -1,0 +1,29 @@
+@import "../../scss/variables";
+
+.groups-list {
+  max-width: 400px;
+  min-height: 100vh;
+  background-color: $dark30;
+  padding: 10px 30px;
+  &-teams {
+    &-create {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &-icon {
+      @include icon;
+    }
+  }
+  &-channels {
+    &-create {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &-icon {
+      @include icon;
+    }
+  }
+
+}
