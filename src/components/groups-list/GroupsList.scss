@@ -1,11 +1,13 @@
 @import "../../scss/variables";
 
 .groups-list {
-  max-width: 400px;
+  max-width: 370px;
   min-height: 100vh;
   background-color: $dark30;
   padding: 10px 30px;
   &-teams {
+    margin-top: 15px;
+    margin-bottom: 40px;
     &-create {
       display: flex;
       justify-content: space-between;

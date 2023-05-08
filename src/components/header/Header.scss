@@ -10,16 +10,21 @@
     justify-content: space-between;
     width: 500px;
     padding-left: 30px;
+    .active {
+      color: white;
+      border-bottom: 3px solid lightgreen;
+      padding-top: 3px;
+    }
     a {
       display: flex;
       flex-flow: column;
       align-items: center;
       justify-content: center;
-    }
-    a:hover {
-      color: lightgray;
-      border-bottom: 3px solid lightgreen;
-      padding-top: 3px;
+      &:hover {
+        color: white;
+        border-bottom: 3px solid lightgreen;
+        padding-top: 3px;
+      }
     }
   }
   .header-social {

@@ -1,10 +1,17 @@
+@import "../../../../scss/variables";
+
 .team-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-right: 10px;
+  margin: 15px 5px;
+  color: $text-color-dark;
+  &.active {
+    color: white;
+  }
   &:hover {
     cursor: pointer;
     color: snow;
   }
 }
+

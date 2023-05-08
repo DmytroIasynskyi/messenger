@@ -1,10 +1,10 @@
 import React from 'react';
 import "./GroupChannelItem.scss";
+import cx from "classnames";
 
-// eslint-disable-next-line react/prop-types
-const GroupChannelItem = ({ channelName }) => {
+const GroupChannelItem = ({ channelName, activeChannelName, setActive }) => {
     return (
-        <div className={"channel-item"}>
+        <div className={cx("channel-item", {"active" : activeChannelName === channelName})} onClick={() => setActive(channelName)}>
             <div>{`#${channelName}`}</div>
         </div>
     );

@@ -2,7 +2,8 @@ $dark30: #191c21;
 $dark60: #161b20;
 $dark90: #111518;
 
-$text-color: #d8d8d9;
+$text-color-light: #d8d8d9;
+$text-color-dark: #afb0b1;
 
 @mixin icon {
   display: flex;

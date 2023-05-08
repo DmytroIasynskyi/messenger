@@ -1,13 +1,18 @@
-import React from 'react';
+import React, {useState} from 'react';
 import "./GroupChannels.scss";
 import GroupChannelItem from "./group-channel-item/GroupChannelItem";
 
-// eslint-disable-next-line react/prop-types
 const GroupChannels = ({ channels }) => {
+    const [activeChannelName, setActiveChannelName] = useState('general');
+
     return (
         <div className={"channels-list"}>
-            {/* eslint-disable-next-line react/prop-types */}
-            {channels.map(channel => <GroupChannelItem key={channel.id} {...channel}/>)}
+            {channels.map(channel => <GroupChannelItem
+                activeChannelName={activeChannelName}
+                key={channel.id}
+                {...channel}
+                setActive={channelName => setActiveChannelName(channelName)}
+            />)}
         </div>
     );
 };

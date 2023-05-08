@@ -10,12 +10,22 @@ const GroupsList = () => {
         id: 1,
         teamName: 'programmers',
         membersCount: 10
-    }]);
+    },
+        {
+            id:2,
+            teamName: "testers",
+            membersCount: 15
+        }]);
 
     const [channels, setChannels] = useState([{
         id: 1,
         channelName: 'general'
-    }]);
+    },
+        {
+            id:2,
+            channelName: 'local'
+        }]);
+
 
     const addNewTeam = () => {
         setTeams([...teams]);
@@ -30,14 +40,14 @@ const GroupsList = () => {
             <div className={"groups-list-teams"}>
                 <div className={"groups-list-teams-create"}>
                     <h3>Teams</h3>
-                    <div><PersonAddAltIcon className={"groups-list-teams-icon"} handleClick={addNewTeam}/></div>
+                    <PersonAddAltIcon className={"groups-list-teams-icon"} onClick={addNewTeam}/>
                 </div>
                 <TeamsList teams={teams}/>
             </div>
             <div className={"groups-list-channels"}>
                 <div className={"groups-list-channels-create"}>
                     <h3>Group channels</h3>
-                    <div><AddIcon className={"groups-list-channels-icon"} handleClick={addNewChannel}/></div>
+                    <AddIcon className={"groups-list-channels-icon"} onClick={addNewChannel}/>
                 </div>
                 <GroupChannels channels={channels}/>
             </div>

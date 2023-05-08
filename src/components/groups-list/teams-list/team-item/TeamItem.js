@@ -1,10 +1,10 @@
 import React from 'react';
 import "./TeamItem.scss";
+import cx from "classnames";
 
-// eslint-disable-next-line react/prop-types
-const TeamItem = ({ teamName, membersCount }) => {
+const TeamItem = ({ teamName, membersCount, activeItemName, setActive }) => {
     return (
-        <div className={"team-item"}>
+        <div className={cx("team-item", {"active" : activeItemName === teamName})} onClick={() => setActive(teamName)}>
             <div>{`#${teamName}`}</div>
             <div>{`${membersCount}`}</div>
         </div>

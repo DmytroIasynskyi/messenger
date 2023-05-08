@@ -1,13 +1,19 @@
-import React from 'react';
+import React, {useState} from 'react';
 import "./TeamsList.scss";
 import TeamItem from "./team-item/TeamItem";
 
-// eslint-disable-next-line react/prop-types
+
 const TeamsList = ({ teams }) => {
+    const [activeItemName, setActiveItemName] = useState('programmers');
+
     return (
         <div className={"teams-list"}>
-            {/* eslint-disable-next-line react/prop-types */}
-            {teams.map(team => <TeamItem key={team.id} {...team} />)}
+            {teams.map(team => <TeamItem
+                activeItemName={activeItemName}
+                key={team.id}
+                {...team}
+                setActive={(itemName) => setActiveItemName(itemName)}
+            />)}
         </div>
     );
 };
