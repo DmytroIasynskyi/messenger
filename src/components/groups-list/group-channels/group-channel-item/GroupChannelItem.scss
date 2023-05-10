@@ -1,0 +1,13 @@
+@import "../../../../scss/variables";
+
+.channel-item {
+  margin: 15px 5px;
+  color: $text-color-dark;
+  &.active {
+    color: white;
+  }
+  &:hover {
+    cursor: pointer;
+    color: snow;
+  }
+}
