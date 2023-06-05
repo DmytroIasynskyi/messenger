@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import "./GroupsList.scss";
+import "./groupsList.scss";
 import TeamsList from "./teams-list/TeamsList";
 import GroupChannels from "./group-channels/GroupChannels";
 import PersonAddAltIcon from '@mui/icons-material/PersonAddAlt';

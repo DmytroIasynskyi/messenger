@@ -1,0 +1,19 @@
+@import "../../scss/variables";
+
+.modal {
+  padding: 5px;
+  border: 1px solid black;
+  position: absolute;
+  background-color: whitesmoke;
+  z-index: 1;
+  width: max-content;
+  color: $text-color-dark;
+  font-size: 17px;
+  & > p {
+    margin: 10px 5px;
+    &:hover {
+      color: black;
+    }
+  }
+
+}

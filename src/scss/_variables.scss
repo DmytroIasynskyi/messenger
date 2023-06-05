@@ -3,16 +3,16 @@ $dark60: #161b20;
 $dark90: #111518;
 
 $text-color-light: #d8d8d9;
-$text-color-dark: #afb0b1;
+$text-color-dark: #97999a;
 
 @mixin icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 30px;
-  height: 30px;
-  border: 0.5px solid snow;
-  background-color: lightgrey;
+  width: 25px;
+  height: 25px;
+  border: 0.5px solid darkgray;
+  background-color: darkgray;
   border-radius: 50%;
   color: $dark90;
   padding: 1px;

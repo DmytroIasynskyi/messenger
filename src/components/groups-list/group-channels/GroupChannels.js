@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import "./GroupChannels.scss";
+import "./groupChannels.scss";
 import GroupChannelItem from "./group-channel-item/GroupChannelItem";
 
 const GroupChannels = ({ channels }) => {

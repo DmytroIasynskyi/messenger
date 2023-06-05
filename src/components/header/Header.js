@@ -1,4 +1,4 @@
-import "./Header.scss";
+import "./header.scss";
 import StarIcon from '@mui/icons-material/Star';
 import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
 import QuestionMarkIcon from '@mui/icons-material/QuestionMark';
