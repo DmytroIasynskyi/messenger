@@ -1,5 +1,5 @@
 import React from 'react';
-import "./GroupChannelItem.scss";
+import "./groupChannelItem.scss";
 import cx from "classnames";
 
 const GroupChannelItem = ({ channelName, activeChannelName, setActive }) => {

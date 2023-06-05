@@ -15,6 +15,7 @@ function App() {
     <div className="App">
         <Header />
         <Routes>
+            <Route path={"/"} element={<Messages/>} />
             <Route path={"/all-projects"} element={<AllProjects/>} />
             <Route path={"/my-projects"} element={<MyProjects/>} />
             <Route path={"/teams"} element={<Teams/>} />

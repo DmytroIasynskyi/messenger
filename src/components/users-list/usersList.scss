@@ -1,0 +1,41 @@
+@import "../../scss/variables";
+
+.users {
+  width: 430px;
+  background-color: $dark90;
+  .users-search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    .users-search-icon {
+      @include icon;
+    }
+  }
+  .users-chats {
+    display: flex;
+    justify-content: space-between;
+    .users-chats-item {
+      cursor: pointer;
+      text-align: center;
+      padding-bottom: 25px;
+      width: 33%;
+      color: $text-color-dark;
+      border-bottom: 0.5px solid gray;
+      &:hover {
+        border-bottom: 2px solid indianred;
+        padding-bottom: 13px;
+        color: whitesmoke;
+      }
+    }
+  }
+  .users-list {
+    margin: 25px 0;
+  }
+  .active {
+    border-bottom: 2px solid red !important;
+    padding-bottom: 13px !important;
+    color: snow !important;
+  }
+}
+

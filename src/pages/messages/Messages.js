@@ -1,10 +1,12 @@
 import React from 'react';
 import GroupsList from "../../components/groups-list/GroupsList";
-
+import UsersList from "../../components/users-list/UsersList";
+import "./messages.scss"
 const Messages = () => {
     return (
-        <div>
+        <div className={"messages"}>
             <GroupsList />
+            <UsersList />
         </div>
     );
 };
